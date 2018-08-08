@@ -63,7 +63,7 @@ int base(int l){
 }
 
 void interpret(){	
-t = p = 0;
+	t = p = 0;
 	b = 1;
 	s[1] = s[2] = s[3] = 0;
 
