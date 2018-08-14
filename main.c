@@ -18,8 +18,12 @@ int main(int argc, char **argv){
 			fscanf(file, "%d", &code[instCount].l);
 			fscanf(file, "%d", &code[instCount].a);
 			fgetc(file);
-			code[instCount].f = getIntructionID(inst);
-			instCount++;
+
+			if(strcmp(inst, "OPR") != 0 || code[instCount].l != 0 || code[instCount].a != 0){
+				code[instCount].f = getIntructionID(inst);
+				instCount++;	
+			}
+			
 		}
 
 		fclose(file);
@@ -193,7 +197,7 @@ void interpret(){
 				break;
 			}
 			default:{
-				printf("\nInstrucao nao reconhecida.\n");
+				printf("\nInstrucao nao reconhecida. Verifique seu codigo por favor.\n");
 				exit(-1);
 				break;
 			}
