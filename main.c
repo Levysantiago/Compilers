@@ -23,6 +23,8 @@ int main(int argc, char **argv){
 				code[instCount].f = getIntructionID(inst);
 				instCount++;	
 			}
+			/*code[instCount].f = getIntructionID(inst);
+			instCount++;*/
 			
 		}
 
