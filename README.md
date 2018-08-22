@@ -3,14 +3,14 @@ This repository is used for Compilers subject. Here is presented a p-code machin
 
 ## Commands
 These are the commands accepted by the p-code-machine, you can find more about [here](http://blackmesatech.com/2011/12/pl0/pl0.xhtml).
-- LIT 0, a : load constant a;
-- OPR 0, a : execute operation a (13 operations: RETURN, 5 math functions, and 7 comparison functions);
-- LOD l, a : load variable a from level l;
-- STO l, a : store variable a at level l;
-- CAL l, a : call procedure a at level l;
-- INT 0, a : increment t-register by a;
-- JMP 0, a : jump to a;
-- JPC 0, a : jump conditional to a (if '0' jump, else don't jump).
+- **LIT 0, a :** load constant a;
+- **OPR 0, a :** execute operation a (13 operations: RETURN, 5 math functions, and 7 comparison functions);
+- **LOD l, a :** load variable a from level l;
+- **STO l, a :** store variable a at level l;
+- **CAL l, a :** call procedure a at level l;
+- **INT 0, a :** increment t-register by a;
+- **JMP 0, a :** jump to a;
+- **JPC 0, a :** jump conditional to a (if '0' jump, else don't jump).
 
 This table shows the meaning of all 13 OPR operations:
 
@@ -31,7 +31,7 @@ This table shows the meaning of all 13 OPR operations:
 | 12  | <= | x=pop();y=pop();push(y<=x). |
 
 ## Getting Started
-Here is some instructions that helps you how to run this code in your machine for development and testing purposes.
+Here are some instructions that will help you how to run this code in your machine for development and testing purposes.
 
 ### Prerequisites
 You'll need to install gcc compiler before you get forward.
