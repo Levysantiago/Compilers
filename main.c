@@ -23,9 +23,6 @@ int main(int argc, char **argv){
 				code[instCount].f = getIntructionID(inst);
 				instCount++;	
 			}
-			/*code[instCount].f = getIntructionID(inst);
-			instCount++;*/
-			
 		}
 
 		fclose(file);
@@ -36,12 +33,12 @@ int main(int argc, char **argv){
 
 		while(1){
 			scanf("\n %s", inst);
-			if(strcmp(inst, "END") == 0){
-				break;
-			}else{
-				scanf("%d %d", &code[instCount].l, &code[instCount].a);
+			scanf("%d %d", &code[instCount].l, &code[instCount].a);
+			if(strcmp(inst, "OPR") != 0 || code[instCount].l != 0 || code[instCount].a != 0){
 				code[instCount].f = getIntructionID(inst);
 				instCount++;
+			}else{
+				break;
 			}
 		}
 	}
