@@ -2,7 +2,7 @@
 This repository is used for Compilers subject. Here is presented a p-code machine developed in C language. The code was based on a [Pascal code](https://en.wikipedia.org/wiki/P-code_machine). A p-code-machine (portable code machine) is a virtual machine designed to execute p-code (the assembly language of a hypothetical CPU).
 
 ## Commands
-These are the commands accepted by the p-code-machine, you can find more about [here](http://blackmesatech.com/2011/12/pl0/pl0.xhtml).
+These are the commands accepted by the p-code-machine, you can find more about it [here](http://blackmesatech.com/2011/12/pl0/pl0.xhtml).
 - **LIT 0, a :** load constant a;
 - **OPR 0, a :** execute operation a (13 operations: RETURN, 5 math functions, and 7 comparison functions);
 - **LOD l, a :** load variable a from level l;
