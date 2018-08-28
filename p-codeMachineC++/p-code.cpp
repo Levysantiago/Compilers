@@ -201,8 +201,8 @@ int main(){
   int i = 0;
   /*Vetores usados para definir o conteúdo das matrizes,
   usado somente no momento do preenchimento das matrizes.*/
-  int A[6] = {1,1,1,1,1,1};
-  int B[6] = {2,2,2,2,2,2};
+  int A[6] = {0,0,0,1,1,1};
+  int B[6] = {0,1,0,1,0,1};
 
 	// Aqui vc preenche as instrucoes no vetor code
   /*Preenchendo matriz A*/
